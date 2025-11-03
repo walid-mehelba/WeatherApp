@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-center align-items-center gap-3"
+          href="#"
+        >
+          <img src="./assets/logo.png" alt="" />
+          <h3 class="text-white">Weather</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="nav nav-pills ms-auto gap-4">
+            <li class="nav-item">
+              <a class="nav-link active px-4" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container py-5 searchInput">
+        <input
+          type="text"
+          class="w-100 form-control bg-dark rounded-pill px-4"
+          placeholder="Find your location..."
+        />
+        <button class="btn btn-info rounded-pill">Search</button>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4  rounded-3 weatherCard">
+            <div class="d-flex rounded-3 justify-content-between align-items-center dateHeader px-2 pt-2">
+              <p>Monday</p>
+              <p>3November</p>
+            </div>
+            <div class="container">
+              <p class="fs-3 pt-3">Cairo</p>
+              <div class="degreeText d-flex justify-content-between align-items-center pb-3">
+                <span class="">23°C</span>
+                <img class="w-25" src="//cdn.weatherapi.com/weather/64x64/day/302.png" alt="">
+              </div>
+              <p class="text-info">Partly cloudy</p>
+              <div class="d-flex gap-4">
+                <span>20%</span>
+                <span>18KM/h</span>
+                <span>East</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
