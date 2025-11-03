@@ -1,7 +1,7 @@
 let key = '7af2e31a483746ebb5631421250311'
 let dataSet = document.getElementById('apiData');
 
-let url = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=alexandria&days=3&aqi=no&alerts=no`
+let url = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=alexandria&days=3&aqi=no&alerts=no`
 
 async function getWeather() {
     let response = await fetch(url);
