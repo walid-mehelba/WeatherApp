@@ -172,7 +172,7 @@ function display() {
   locationText.innerHTML = today.location;
   degreeText.innerHTML = `<span>${today.temp}°C</span>
                 <img
-                  class="w-100"
+                  class="w-25"
                   src= "https://${today.icon}"
                   alt=""
                 />`;

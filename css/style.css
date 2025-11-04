@@ -43,8 +43,8 @@ header {
     
 }
 
-.form-control ::placeholder {
-    color: white;
+.form-control::placeholder {
+    color: #757575;
 }
 
 .searchInput .btn {
@@ -55,12 +55,12 @@ header {
 
 .weatherCard1 {
     background-color: #323544;
-    height: 400px;
+    height: 350px;
     color: #C0C1C9;
 }
 .weatherCard2 {
     background-color: #262936;
-    height: 400px;
+    height: 350px;
     color: #C0C1C9;
 }
     
