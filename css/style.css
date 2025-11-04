@@ -49,19 +49,29 @@ header {
 
 .searchInput .btn {
     position: absolute;
-    right: 130px;
+    right: 9%;
     transform: translateY(14%);
 }
 
-.weatherCard {
+.weatherCard1 {
     background-color: #323544;
-    height: 350px;
+    height: 400px;
+    color: #C0C1C9;
+}
+.weatherCard2 {
+    background-color: #262936;
+    height: 400px;
     color: #C0C1C9;
 }
     
-.dateHeader {
+.dateHeader1 {
     background-color: #2D303D;
     width: 100% !important;
+}
+
+.dateHeader2 {
+    background-color: #222531;
+    width: 100%;
 }
 
 .row>* {
@@ -70,7 +80,7 @@ header {
 }
 
 .degreeText {
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 700;
     color: white;
     line-height: 135px;

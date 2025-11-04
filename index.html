@@ -55,33 +55,60 @@
     <header>
       <div class="container py-5 searchInput">
         <input
+          oninput="handleInput(this.value)"
+          id="searchInput"
           type="text"
           class="w-100 form-control bg-dark rounded-pill px-4"
           placeholder="Find your location..."
         />
         <button class="btn btn-info rounded-pill">Search</button>
       </div>
-      <div class="container">
+      <div class="container pb-5">
         <div class="row">
-          <div class="col-md-4  rounded-3 weatherCard">
-            <div class="d-flex rounded-3 justify-content-between align-items-center dateHeader px-2 pt-2">
-              <p>Monday</p>
-              <p>3November</p>
+          <div class="col-md-4 rounded-3 weatherCard1">
+            <div id="todayDate"
+              class="d-flex rounded-3 justify-content-between align-items-center dateHeader px-2 pt-2"
+            >
+              
             </div>
             <div class="container">
-              <p class="fs-3 pt-3">Cairo</p>
-              <div class="degreeText d-flex justify-content-between align-items-center pb-3">
-                <span class="">23°C</span>
-                <img class="w-25" src="//cdn.weatherapi.com/weather/64x64/day/302.png" alt="">
+              <p id="locationText" class="fs-3 pt-3"></p>
+              <div id="degreeText"
+                class="degreeText d-flex justify-content-between align-items-center pb-2"
+              >
+                
               </div>
-              <p class="text-info">Partly cloudy</p>
-              <div class="d-flex gap-4">
-                <span>20%</span>
-                <span>18KM/h</span>
-                <span>East</span>
+              <p id="conditionText" class="text-info"></p>
+              <div id="windText" class="d-flex gap-4">
+                
               </div>
             </div>
-            
+          </div>
+          <div class="col-md-4 rounded-3 weatherCard2">
+            <div class="d-flex rounded-3 dateHeader2 px-2 pt-2">
+              <p id="tomorrowDate" class="text-center w-100"></p>
+            </div>
+            <div class="container">
+              <div id="tomorrowDegreeText"
+                class="d-flex flex-column justify-content-between align-items-center pb-2 pt-4"
+              >
+                
+              </div>
+              <p id="tomorrowConditionText" class="text-info text-center"></p>
+            </div>
+          </div>
+          <div class="col-md-4 rounded-3 weatherCard1">
+            <div class="d-flex rounded-3 dateHeader1 px-2 pt-2">
+              <p id="afterTomorrowDate" class="text-center w-100"></p>
+            </div>
+            <div class="container">
+              <div id="afterTomorrowDegreeText"
+                class="d-flex flex-column justify-content-between align-items-center pb-2 pt-4"
+              >
+                
+              </div>
+              <p id="afterTomorrowConditionText" class="text-info text-center"></p>
+            </div>
           </div>
         </div>
       </div>
